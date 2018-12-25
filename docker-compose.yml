@@ -1,0 +1,9 @@
+version: '3'
+services:
+  client:
+    build: .
+    ports:
+      - 7000:7000
+    volumes:
+      - ./frps.ini:/frp/frps.ini
+    restart: always
